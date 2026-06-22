@@ -537,6 +537,8 @@
     .portfolio-item:nth-child(5) { grid-column: span 4; aspect-ratio: 4/5; }
     .portfolio-item:nth-child(6) { grid-column: span 8; aspect-ratio: 16/9; }
     .portfolio-item:nth-child(7) { grid-column: span 4; aspect-ratio: 4/5; }
+    /* extra items na "meer laden" — nette 2-kolom rijen */
+    .portfolio-item:nth-child(n+8) { grid-column: span 6; aspect-ratio: 4/3; }
 
     .portfolio-item img {
       width: 100%; height: 100%;
@@ -662,7 +664,14 @@
     }
     .project-row:hover .project-thumb { opacity: 1; transform: scale(1); }
     .project-thumb img { width: 100%; height: 100%; object-fit: cover; }
-    .project-thumb iframe { width: 100%; height: 100%; border: none; }
+    .play-icon {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--c-green);
+      color: var(--c-accent);
+      transition: background 0.3s;
+    }
+    .project-row:hover .play-icon { background: var(--c-green-2); }
     .project-cta {
       text-align: right;
       font-size: 11px;
@@ -1504,9 +1513,7 @@
             <h3>PLASTIC VIDEO</h3>
             <p>Bewustwording &amp; impact — Documentaire short film</p>
           </div>
-          <div class="project-thumb">
-            <iframe src="https://drive.google.com/file/d/10f_FIWqrFXqGLohzsLYvoLK3yFfloMge/preview" allow="autoplay" allowfullscreen></iframe>
-          </div>
+          <div class="project-thumb"><div class="play-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.2"/><path d="M10 8.5L16 12L10 15.5V8.5Z" fill="currentColor"/></svg></div></div>
           <a href="https://drive.google.com/file/d/10f_FIWqrFXqGLohzsLYvoLK3yFfloMge/view" target="_blank" rel="noopener" class="project-cta">
             Bekijken
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -1521,9 +1528,7 @@
             <h3>KORFBALL VIDEO</h3>
             <p>Sport &amp; beweging — Aftermovie &amp; event coverage</p>
           </div>
-          <div class="project-thumb">
-            <iframe src="https://drive.google.com/file/d/1T856JJDgG-0risP83DBbk5GDug1CcGAf/preview" allow="autoplay" allowfullscreen></iframe>
-          </div>
+          <div class="project-thumb"><div class="play-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.2"/><path d="M10 8.5L16 12L10 15.5V8.5Z" fill="currentColor"/></svg></div></div>
           <a href="https://drive.google.com/file/d/1T856JJDgG-0risP83DBbk5GDug1CcGAf/view" target="_blank" rel="noopener" class="project-cta">
             Bekijken
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -1538,9 +1543,7 @@
             <h3>CITY WALK AFTERMOVIE</h3>
             <p>Aftermovie events</p>
           </div>
-          <div class="project-thumb">
-            <iframe src="https://www.youtube.com/embed/MgCuLozYESk" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+          <div class="project-thumb"><div class="play-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.2"/><path d="M10 8.5L16 12L10 15.5V8.5Z" fill="currentColor"/></svg></div></div>
           <a href="https://www.youtube.com/watch?v=MgCuLozYESk" target="_blank" rel="noopener" class="project-cta">
             Bekijken
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -1555,9 +1558,7 @@
             <h3>NGO AWARENESS FILM</h3>
             <p>Impact &amp; maatschappij — Short film voor een goed doel</p>
           </div>
-          <div class="project-thumb">
-            <iframe src="https://drive.google.com/file/d/11Yb4WClmg_DB1nYJix375D-cPuIhkeSL/preview" allow="autoplay" allowfullscreen></iframe>
-          </div>
+          <div class="project-thumb"><div class="play-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.2"/><path d="M10 8.5L16 12L10 15.5V8.5Z" fill="currentColor"/></svg></div></div>
           <a href="https://drive.google.com/file/d/11Yb4WClmg_DB1nYJix375D-cPuIhkeSL/view" target="_blank" rel="noopener" class="project-cta">
             Bekijken
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -1572,9 +1573,7 @@
             <h3>UBUNTU X WKZ BRANDING VIDEO</h3>
             <p>Een video voor het promoten van sporten voor kinderen waarvoor het niet vanzelfsprekend is dat zij kunnen sporten</p>
           </div>
-          <div class="project-thumb">
-            <iframe src="https://drive.google.com/file/d/19s7894BhWBrDwGxJZF50MTRVNfo_xQRk/preview" allow="autoplay" allowfullscreen></iframe>
-          </div>
+          <div class="project-thumb"><div class="play-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.2"/><path d="M10 8.5L16 12L10 15.5V8.5Z" fill="currentColor"/></svg></div></div>
           <a href="https://drive.google.com/file/d/19s7894BhWBrDwGxJZF50MTRVNfo_xQRk/view" target="_blank" rel="noopener" class="project-cta">
             Bekijken
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
