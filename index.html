@@ -658,21 +658,9 @@
     }
     .approach-grid {
       display: grid;
-      grid-template-columns: 0.7fr 1fr 1.3fr;
-      gap: 60px;
-      align-items: center;
-    }
-    .approach-photo {
-      position: relative;
-      align-self: stretch;
-      min-height: 500px;
-    }
-    .approach-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: bottom center;
-      filter: drop-shadow(0 20px 60px rgba(90,173,110,0.15));
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      align-items: start;
     }
     .approach-left h2 {
       font-family: var(--f-display);
@@ -946,8 +934,7 @@
       .meet-grid { grid-template-columns: 1fr; gap: 48px; }
       .meet-image { aspect-ratio: 16/9; max-height: 500px; }
       .meet-image-badge { display: none; }
-      .approach-grid { grid-template-columns: 1fr; gap: 48px; }
-      .approach-photo { min-height: 340px; max-width: 280px; margin: 0 auto; }
+      .approach-grid { grid-template-columns: 1fr; gap: 60px; }
       .contact-grid { grid-template-columns: 1fr; gap: 60px; }
       .project-row { grid-template-columns: 60px 1fr 80px; }
       .project-thumb { display: none; }
@@ -1578,10 +1565,6 @@
   <section id="approach" class="section-pad">
     <div class="container">
       <div class="approach-grid">
-
-        <div class="approach-photo reveal">
-          <img src="images/boaz-camera.png" alt="Boaz Zuman met camera">
-        </div>
 
         <div class="approach-left">
           <div class="section-label reveal">
