@@ -429,6 +429,7 @@
     .meet-image img {
       width: 100%; height: 100%;
       object-fit: cover;
+      object-position: center top;
       transition: transform 0.8s var(--ease-out);
     }
     .meet-image:hover img { transform: scale(1.04); }
@@ -657,9 +658,21 @@
     }
     .approach-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 100px;
-      align-items: start;
+      grid-template-columns: 0.7fr 1fr 1.3fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .approach-photo {
+      position: relative;
+      align-self: stretch;
+      min-height: 500px;
+    }
+    .approach-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom center;
+      filter: drop-shadow(0 20px 60px rgba(90,173,110,0.15));
     }
     .approach-left h2 {
       font-family: var(--f-display);
@@ -933,7 +946,8 @@
       .meet-grid { grid-template-columns: 1fr; gap: 48px; }
       .meet-image { aspect-ratio: 16/9; max-height: 500px; }
       .meet-image-badge { display: none; }
-      .approach-grid { grid-template-columns: 1fr; gap: 60px; }
+      .approach-grid { grid-template-columns: 1fr; gap: 48px; }
+      .approach-photo { min-height: 340px; max-width: 280px; margin: 0 auto; }
       .contact-grid { grid-template-columns: 1fr; gap: 60px; }
       .project-row { grid-template-columns: 60px 1fr 80px; }
       .project-thumb { display: none; }
@@ -1135,14 +1149,18 @@
             IK BEN<br><em>BOAZ</em><br>ZUMAN
           </h2>
           <p class="reveal reveal-delay-2">
-            <strong>Ik geloof dat heel veel verhalen het waard zijn om verteld te worden — en vast ook die van jou!</strong>
-            Of het nou een organisatie is die zijn missie naar buiten wil brengen,
-            een bruiloft, een mentale of fysieke reis — ik leg het vast, maar dan
-            vooral ook samen met jou.
+            <strong>Als klein jongetje van 3 zei ik al tegen mijn moeder: "zelluf doen."</strong>
+            Die drang om zelf te ontdekken, te creëren en mijn eigen weg te volgen is nooit verdwenen —
+            het geeft zich langzaam steeds meer weer in video en fotografie.
           </p>
           <p class="reveal reveal-delay-2">
-            Mijn stijl is vooral menselijk en inspirerend. Door het verhaal moet
-            er een actiegevoel komen bij de kijker.
+            Ik ben bezig om van mijn hobby mijn werk te maken. Met enorm veel enthousiasme leg ik mensen,
+            momenten en verhalen vast. Ik krijg energie van het in het zonnetje zetten van anderen en van
+            het maken van impact met beelden die blijven hangen.
+          </p>
+          <p class="reveal reveal-delay-3">
+            Zie jij kansen voor een toffe samenwerking, een video met betekenis of wil je memorabele foto's
+            voor jou en je gezin? Kijk dan vooral verder!
           </p>
           <p class="reveal reveal-delay-3">
             Gebaseerd in <strong>Lelystad</strong>, actief door heel Nederland
@@ -1560,6 +1578,10 @@
   <section id="approach" class="section-pad">
     <div class="container">
       <div class="approach-grid">
+
+        <div class="approach-photo reveal">
+          <img src="images/boaz-camera.png" alt="Boaz Zuman met camera">
+        </div>
 
         <div class="approach-left">
           <div class="section-label reveal">
