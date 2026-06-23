@@ -996,14 +996,30 @@
       .portfolio-item:nth-child(6),
       .portfolio-item:nth-child(7) { grid-column: span 12; }
       .portfolio-item:nth-child(n+8) { grid-column: span 12; aspect-ratio: 4/3; }
-      .project-row { grid-template-columns: 40px 1fr; gap: 12px; }
+      .project-row {
+        grid-template-columns: 40px 1fr;
+        gap: 12px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(90,173,110,0.15);
+      }
+      .project-thumb { display: none; }
       .project-cta {
         grid-column: 2;
-        font-size: 12px;
-        padding: 6px 0 2px;
-        justify-content: flex-start;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 8px;
+        padding: 10px 18px;
+        background: var(--c-green);
+        border: 1px solid var(--c-accent);
         color: var(--c-accent);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
         text-decoration: none;
+        min-height: 44px;
+        box-sizing: border-box;
       }
       .form-row { grid-template-columns: 1fr; }
       .footer-inner { flex-direction: column; text-align: center; }
@@ -1139,10 +1155,6 @@
         <div class="stat-item reveal">
           <div class="stat-num"><span class="count-up" data-target="10">0</span><em>+</em></div>
           <div class="stat-label">Projecten afgerond</div>
-        </div>
-        <div class="stat-item reveal reveal-delay-1">
-          <div class="stat-num" style="font-size:clamp(28px,3vw,42px);letter-spacing:0.02em;">Genoeg<em style="font-size:0.5em;display:block;font-family:var(--f-body);font-weight:300;font-style:italic;color:var(--c-muted);margin-top:-4px;">(vraag maar niet hoeveel)</em></div>
-          <div class="stat-label">Landen gefotografeerd</div>
         </div>
         <div class="stat-item reveal reveal-delay-2">
           <div class="stat-num"><span class="count-up" data-target="1">0</span><em>+</em></div>
@@ -1976,6 +1988,16 @@
       const y = window.scrollY;
       heroBg.style.transform = `translateY(${y * 0.3}px)`;
     }, { passive: true });
+
+    /* ── PROJECT ROWS MOBIEL KLIKBAAR ── */
+    document.querySelectorAll('.project-row').forEach(row => {
+      const link = row.querySelector('.project-cta');
+      if (!link) return;
+      row.addEventListener('click', e => {
+        if (e.target.closest('.project-cta')) return; // laat de link zelf werken
+        window.open(link.href, '_blank', 'noopener,noreferrer');
+      });
+    });
 
     /* ── CONTACT FORM ── */
     document.getElementById('contactForm').addEventListener('submit', async e => {
