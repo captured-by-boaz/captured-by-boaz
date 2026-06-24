@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Captured by Boaz — Fotograaf & Videograaf uit Lelystad. Verhalen die mensen in beweging brengen.">
+    <title>Captured by Boaz — Verhalen die mensen in beweging brengen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="./album.css">
+</head>
+
+<body>
+
+<!-- ── GALLERY GRID WITH PAGINATION ── -->
+<section id="gallery">
+    <div class="gallery-container">
+        <div class="gallery-header">
+            <h2>Portfolio Selectie</h2>
+            <p>Ontdek mijn werk uit verschillende categorieën</p>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Gallery items worden hier door JavaScript ingevuld -->
+        </div>
+
+        <div class="gallery-pagination">
+            <button class="pagination-btn" id="prevBtn" aria-label="Vorige pagina">← Vorige</button>
+            <div class="pagination-dots" id="paginationDots"></div>
+            <button class="pagination-btn" id="nextBtn" aria-label="Volgende pagina">Volgende →</button>
+        </div>
+
+        <div class="page-info" id="pageInfo"></div>
+    </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-logo">CAPTURED <span>by Boaz</span></div>
+            <ul class="footer-links" role="list">
+                <li><a href="#meet">Over mij</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="footer-copy">© 2026 Captured by Boaz — Lelystad, NL</p>
+        </div>
+    </div>
+</footer>
+
+<script src="album.js" defer></script>
+</body>
+</html>

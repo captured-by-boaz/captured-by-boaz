@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Captured by Boaz favicon">
+    <!-- background circle (huisstijl-blauw) -->
+    <rect width="64" height="64" rx="12" ry="12" fill="#0a84ff"/>
+    <!-- camera body -->
+    <g transform="translate(6,10)" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+        <rect x="2" y="6" width="44" height="28" rx="4" ry="4" fill="#ffffff" opacity="0.06" stroke="none"/>
+        <rect x="2" y="6" width="44" height="28" rx="4" ry="4" />
+        <!-- top hump -->
+        <rect x="10" y="0" width="14" height="8" rx="2" ry="2" fill="#ffffff" opacity="0.06" stroke="none" />
+        <rect x="10" y="0" width="14" height="8" rx="2" ry="2" />
+        <!-- lens -->
+        <circle cx="24" cy="20" r="8" fill="#ffffff" opacity="0.02" stroke="none"/>
+        <circle cx="24" cy="20" r="7" />
+        <!-- small flash/circle -->
+        <circle cx="36" cy="10" r="2.2" fill="#ffffff" opacity="0.9" stroke="none"/>
+    </g>
+
+    <!-- subtle 'B' inside lens as herkenningspunt (white stroke) -->
+    <g transform="translate(14,18)" fill="none" stroke="#ffffff" stroke-width="2">
+        <path d="M18 6
+             C21 6, 24 8, 24 12
+             C24 16, 21 18, 18 18
+             L14 18
+             M14 18
+             L10 18
+             M10 6
+             L14 6
+             L14 18" />
+    </g>
+</svg>
